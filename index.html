@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css">
+    
   </head>
   <body>
-    <main>
-      <article>
-        <div class="page" style="border-color: midnightblue;">
-          <!-- Content -->
+    <main style="background: url(img/arena6.jpg) 100% 100% no-repeat; background-size: cover;">
+      <article style="margin-top: 100px;">
+        <div class="page" style="border-color: brown; background-color: RGB(255, 225, 90);">
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
-                <!-- Avatar -->
                 <div class="avatar-wrapper">
                   <object class="avatar" data="img/avatar.png" width = 170 role="img" aria-label="My profile picture"></object>
                 </div>
@@ -21,8 +22,8 @@
               <div class="thirteen wide column">
                 <div class="stackable grid">
                   <div class="sixteen wide column">
-                   <h1 class="name">Ryu Hoshi (リュウ Ryū)</h1>
-                    <div class="job">Proffesional fighter</div>
+                   <h1 class="name animated fadeInRight">Ryu Hoshi (リュウ Ryū)</h1>
+                    <div class="job animated fadeInRight delay-1s">Proffesional fighter</div>
                     <ul class="contacts">
                       <li>
                         <a href="https://www.facebook.com/profile.php?id=100004808958030" rel="author" class="facebook">
@@ -63,7 +64,7 @@
                   </div>
                   <div class="sixteen wide column">
                     <h2>Resume</h2>
-                    <p>― I do not compete with others, the only competition that challenges me is myself. As a fighter, friend and an employee I am known as contemplative, tortured and driven.</p>
+                    <p class="animated fadeIn delay-3s">― I do not compete with others, the only competition that challenges me is myself. As a fighter, friend and an employee I am known as contemplative, tortured and driven.</p>
                   </div>
                 </div>
               </div>
@@ -74,10 +75,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="ten wide column">
-                <!-- Experience -->
-                <h3>Experience</h3>
+              <div class="ten wide column animated zoomIn delay-4s">
                 <ul class="timeline">
+                  <h3>Experience</h3>
                   <li>
                     <p><small><b><em>2018</em></b></small></p>
                     <p>Amongst many fighters of the past was featured in the movie<a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%D1%83_%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D1%83_%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%D1%81%D1%8F_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)">"Ready Player One".</a>Ryu ready always!</p>
@@ -135,8 +135,9 @@
                     <p>Started working for Capcom project <a href="https://ru.wikipedia.org/wiki/Street_Fighter_(%D1%81%D0%B5%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80)#Street_Fighter_(1987)">"Street Fighter"</a> . My partner was <a href="https://streetfighter.fandom.com/wiki/Ken_Masters">Ken Masters</a> , the boss'name was Sagat.</>
                   </li>
                 </ul>
-                <h3>Publications</h3>
-                <ul class="timeline">
+               
+                <ul class="timeline"> 
+                  <h3>Publications</h3>
                   <li>
                     <p><small><b><em>2011</em></b></small></p>
                     <p>The true and humble story of me under pseudonim Tyler Wilde in an article "The evolution of Ken and Ryu"</p>
@@ -146,8 +147,9 @@
                     <p>For 15 years I have published comic books with Udon Entertainment depicting my adventures, bitter lessons and great victories.</p>
                   </li>
                 </ul>
-                <h3>Achivements <img src="img/gold.png" alt="gold"> </h3>
+                
                 <ul class="details">
+                  <h3>Achivements <img src="img/gold.png" alt="gold"> </h3>
                   <li>
                     <p>#1 in "Top 25 Street Fighter Characters" by IGN, who also called me "fancy", "icon" and "a testament to the virtue of simplicity" ❤️</p>
                   </li>
@@ -164,13 +166,11 @@
                     <p>In a survey of 4000 online matches for Super Street Fighter IV, I got to be the most popular character, with 16.6% of players choosing my side</p>
                   </li>
                 </ul>
-                
-
               </div>
-              <div class="six wide column">
+              <div class="six wide column animated zoomIn delay-5s">
                 <section>
                   <h3>Languages</h3>
-                  <p class="tags small"><img src="img/america.png" alt="us"> ENGLISH <img src="img/china.png" alt="mn"> MANDARIN <img src="img/japan.png" alt="jp"> JAPANESE</p>
+                  <p class="tags small"><img src="img/lang/america.png" alt="us"> ENGLISH <img src="img/lang/china.png" alt="mn"> MANDARIN <img src="img/lang/japan.png" alt="jp"> JAPANESE</p>
                 </section>
                 <section>
                   <h3>Skills</h3>
@@ -196,11 +196,39 @@
                   <h3>Life lesson</h3>
                   <p class="tags small">You must defeat Sheng Long to stand a chance.</p>
                 </section>
+                <section>
+                  <h3>My battles</h3>
+                  <div class="slider">
+                    <div class="slider__wrapper">
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle1.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle2.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle3.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle4.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle5.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: url(img/slider/battle6.jpg) 100% 100% no-repeat; background-size: cover"></div>
+                      </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </article>
+      <script src="js\main.js"></script>
     </main>
   </body>
 </html>
